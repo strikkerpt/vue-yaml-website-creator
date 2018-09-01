@@ -5,6 +5,9 @@ import Router from 'vue-router'
 import Meta from 'vue-meta'
 import pages from 'json-loader!yaml-loader!./../pages/Homepage.yaml'
 
+import List from '@/components/List'
+import Textblock from '@/components/Text'
+
 Vue.use(Router)
 Vue.use(Meta)
 
@@ -25,25 +28,15 @@ Object.keys(pages).forEach(key => {
           blocks: pages[key].template
         }
       },
-      methods: {
-        alignClass (align) {
-          switch (align) {
-            case 'left':
-              return 'col-12 text-left'
-            case 'right':
-              return 'col-12 text-right'
-            case 'center':
-              return 'col-12 text-center'
-          }
-        }
+      components: {
+        List,
+        Textblock
       },
       template: '<div class="page">' +
-      '<div class="container" v-for="(block, key) in blocks">' +
-      '<div :class="alignClass(block.align)" v-if="key == \'text\'"><p>{{block.content}}</p></div>' +
-      '<div class="col-12" v-if="key == \'image\'"><img v-bind:src="block.src" v-bind:alt="block.title" /></div>' +
-      '<ul v-if="key == \'list\'">' +
-      '<li v-for="listItem in block">{{listItem.content}}</li>' +
-      '</ul>' +
+      '<div class="container" v-for="block in blocks">' +
+      '<Textblock v-if="block.type == \'text\'" v-bind:text="block"></Textblock>' +
+      '<div class="col-12" v-if="block.type == \'image\'"><img v-bind:src="block.src" v-bind:alt="block.title" /></div>' +
+      '<List v-if="block.type == \'list\'" v-bind:list="block"></List>' +
       '</div>' +
       '</div>'
     })
