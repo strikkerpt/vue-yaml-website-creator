@@ -6,46 +6,35 @@ homepage:
     name: Homepage
 
   template:
-#    topbar:
-#      brand:
-#        name: Yaml Website
-#        logo: ./assets/logo.png
-#      menu:
-#        homepage:
-#          url: /
-#        item2:
-#          url: /about
-#        item3:
-#          url: https://github.com/
-#    header:
-#      background: ./assets/logo.png
-#      title: This is a header title
-#      subtitle: This is a little header subtitle
-#    highlight:
-#      id:
-#      content:
+      - type: topbar
+        brand: VYWC
+        logo: ./assets/logo.png
+        menu:
+          Homepage:
+            url: /
+          About:
+            url: /about
+          Github:
+            url: https://github.com/
+
       - type: text
-        id: box2
-        content: Bananas
+        id: box
+        content: Insert a long test here if you want
         align: left
+
       - type: text
         id: box
         content: Insert a long test here if you want
         align: right
+
       - type: image
         title: This is a image
         src: https://r.hswstatic.com/w_907/gif/tesla-cat.jpg
+
       - type: list
         content:
-          item1:
-            content: Isto é um item de lista 1
-          item2:
-            content: Outro item de lista 2
-          item3:
-            content: Outro
-#    map:
-#      coordinates:
-#        latitude:
-#        longitude:
-#      key:
+          - First item of the list
+          - Second item of the list
+          - Third item of the list
+
 ...

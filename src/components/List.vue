@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <li v-for="listItem in list.content">{{listItem.content}}</li>
+        <li v-for="listItem in list.content">{{listItem}}</li>
     </ul>
 </template>
 
