@@ -51,7 +51,7 @@ homepage:
 
       - type: image
         title: This is a image
-        src: ./../assets/logo.png
+        src: logo.png
 
 
       - type: list
