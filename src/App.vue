@@ -36,4 +36,12 @@ export default {
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
   }
+
+  .grayscale {
+    filter: grayscale(100%);
+  }
+
+  .blur {
+    filter: blur(5px);
+  }
 </style>

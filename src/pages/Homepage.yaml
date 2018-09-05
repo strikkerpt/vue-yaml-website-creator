@@ -52,6 +52,7 @@ homepage:
       - type: image
         title: This is a image
         align: center
+        filter: blur
         src: logo.png
 
 
