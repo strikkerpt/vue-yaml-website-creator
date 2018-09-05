@@ -81,7 +81,7 @@ module.exports = {
       },
       {
         test: /\.yaml$/,
-        include: resolve('pages'),
+        include: [resolve('pages'), resolve('config')],
         loader: 'yaml',
       }
     ]

@@ -17,14 +17,32 @@ homepage:
           Github:
             url: https://github.com/
 
+      - type: highlight
+        weight: 1
+        id: highlight
+        content: Welcome to VYWC!
+        align: center
+
       - type: text
         id: box
-        content: Insert a long test here if you want
+        content: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus quis est sed ipsum sagittis consequat tempor quis neque.
+          Nunc semper purus mi, tempor ornare sapien ultrices nec.
+          In quis sapien interdum, maximus orci eget, scelerisque justo.
+          Aenean nec elementum ex. Sed eget sem ultrices, aliquam arcu sed, sollicitudin sem.
+          Suspendisse potenti.
         align: left
 
       - type: text
         id: box
-        content: Insert a long test here if you want
+        content: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus quis est sed ipsum sagittis consequat tempor quis neque.
+          Nunc semper purus mi, tempor ornare sapien ultrices nec.
+          In quis sapien interdum, maximus orci eget, scelerisque justo.
+          Aenean nec elementum ex. Sed eget sem ultrices, aliquam arcu sed, sollicitudin sem.
+          Suspendisse potenti
         align: right
 
       - type: image

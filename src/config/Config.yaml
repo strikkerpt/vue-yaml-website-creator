@@ -1,0 +1,9 @@
+---
+config:
+
+  styles:
+    font: spectral
+    backgroundColor: '#fff'
+    textColor: '#000'
+
+...

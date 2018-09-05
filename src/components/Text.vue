@@ -1,5 +1,5 @@
 <template>
-    <div :class="alignClass(text.align)">
+    <div :class="['col-12', alignClass(text.align)]">
         <p>{{text.content}}</p>
     </div>
 </template>
@@ -15,11 +15,11 @@
           }
           switch (align) {
             case 'left':
-              return 'col-12 text-left'
+              return 'text-left'
             case 'right':
-              return 'col-12 text-right'
+              return 'text-right'
             case 'center':
-              return 'col-12 text-center'
+              return 'text-center'
           }
         }
       }

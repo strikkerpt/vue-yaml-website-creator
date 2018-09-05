@@ -20,6 +20,6 @@
 
 <style scoped>
     .navbar {
-        margin-bottom: 60px;
+        margin: 60px 0;
     }
 </style>
