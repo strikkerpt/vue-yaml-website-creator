@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Meta from 'vue-meta'
-//import pages from 'json-loader!yaml-loader!./../pages/Homepage.yaml'
 import Config from 'json-loader!yaml-loader!./../config/Config.yaml'
 
 
@@ -41,9 +40,6 @@ Object.keys(pages).forEach(key => {
         }
       },
       beforeMount: function () {
-        console.log(this.font);
-        console.log(this.backgroundColor);
-        // Get classname
         let body = document.getElementsByTagName('body')[0];
         body.style.backgroundColor = this.backgroundColor;
         body.style.color = this.textColor;

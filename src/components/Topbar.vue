@@ -4,7 +4,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav float-right">
                 <li v-for="(block,key) in menu" class="nav-item">
-                    <a class="nav-link" :href="block.url">{{key}}</a>
+                    <router-link class="nav-link" v-bind:to="block.url">{{key}}</router-link>
                 </li>
             </ul>
         </div>
@@ -12,10 +12,10 @@
 </template>
 
 <script>
-    export default {
-      name: 'TopBar',
-      props: ['brand','logo','menu']
-    }
+  export default {
+    name: 'TopBar',
+    props: ['brand', 'logo', 'menu']
+  }
 </script>
 
 <style scoped>

@@ -49,6 +49,11 @@ homepage:
         title: This is a image
         src: https://r.hswstatic.com/w_907/gif/tesla-cat.jpg
 
+      - type: image
+        title: This is a image
+        src: ./../assets/logo.png
+
+
       - type: list
         content:
           - First item of the list
