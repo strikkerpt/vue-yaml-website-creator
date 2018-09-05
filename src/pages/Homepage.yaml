@@ -20,7 +20,7 @@ homepage:
       - type: highlight
         weight: 1
         id: highlight
-        content: Welcome to VYWC!
+        content: Welcome to VYWC testing homepage. Crafted with YAML!
         align: center
 
       - type: text

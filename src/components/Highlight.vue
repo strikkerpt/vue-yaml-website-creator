@@ -10,29 +10,18 @@
 </template>
 
 <script>
-    export default {
-      name: 'HighlightBlock',
-      props: ['highlight'],
-      methods: {
-        alignClass (align) {
-          if (!align) {
-            return
-          }
-          switch (align) {
-            case 'left':
-              return 'text-left'
-            case 'right':
-              return 'text-right'
-            case 'center':
-              return 'text-center'
-          }
-        }
-      }
-    }
+  import alignMixin from '@/mixin/alignMixin'
+
+  export default {
+    name: 'HighlightBlock',
+    props: ['highlight'],
+    mixins: [alignMixin]
+  }
 </script>
 
 <style scoped>
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
+        margin-bottom: 30px;
     }
 </style>
