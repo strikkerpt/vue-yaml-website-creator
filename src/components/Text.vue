@@ -5,23 +5,11 @@
 </template>
 
 <script>
-    export default {
-      name: 'Textblock',
-      props: ['text'],
-      methods: {
-        alignClass (align) {
-          if (!align) {
-            return
-          }
-          switch (align) {
-            case 'left':
-              return 'text-left'
-            case 'right':
-              return 'text-right'
-            case 'center':
-              return 'text-center'
-          }
-        }
-      }
-    }
+  import alignMixin from '@/mixin/alignMixin'
+
+  export default {
+    name: 'Textblock',
+    props: ['text'],
+    mixins: [alignMixin]
+  }
 </script>

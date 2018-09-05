@@ -55,7 +55,7 @@ Object.keys(pages).forEach(key => {
       '<div class="container" v-for="block in blocks">' +
       '<TextBlock v-if="block.type == \'text\'" v-bind:text="block"></TextBlock>' +
       '<HighlightBlock v-if="block.type == \'highlight\'" v-bind:highlight="block"></HighlightBlock>' +
-      '<ImageBlock v-if="block.type == \'image\'" v-bind:src="block.src" v-bind:alt="block.title"></ImageBlock>' +
+      '<ImageBlock v-if="block.type == \'image\'" v-bind:src="block.src" v-bind:alt="block.title" v-bind:align="block.align"></ImageBlock>' +
       '<ListBlock v-if="block.type == \'list\'" v-bind:list="block"></ListBlock>' +
       '<TopBarBlock v-if="block.type == \'topbar\'" v-bind:brand="block.brand" v-bind:menu="block.menu"></TopBarBlock>' +
       '</div>' +
