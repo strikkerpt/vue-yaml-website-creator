@@ -1,6 +1,6 @@
 <template>
     <div :class="['col-12', alignClass(text.align)]">
-        <p>{{text.content}}</p>
+        <p v-html="text.content"></p>
     </div>
 </template>
 

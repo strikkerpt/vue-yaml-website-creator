@@ -8,7 +8,7 @@ about:
   template:
     - type: topbar
       brand: VYWC
-      logo: ./assets/logo.png
+      logo: logo.png
       menu:
         Homepage:
           url: /

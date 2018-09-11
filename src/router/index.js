@@ -57,7 +57,7 @@ Object.keys(pages).forEach(key => {
       '<HighlightBlock v-if="block.type == \'highlight\'" v-bind:highlight="block"></HighlightBlock>' +
       '<ImageBlock v-if="block.type == \'image\'" v-bind:src="block.src" v-bind:alt="block.title" v-bind:align="block.align" v-bind:filter="block.filter"></ImageBlock>' +
       '<ListBlock v-if="block.type == \'list\'" v-bind:list="block"></ListBlock>' +
-      '<TopBarBlock v-if="block.type == \'topbar\'" v-bind:brand="block.brand" v-bind:menu="block.menu"></TopBarBlock>' +
+      '<TopBarBlock v-if="block.type == \'topbar\'" v-bind:brand="block.brand" v-bind:menu="block.menu" v-bind:logo="block.logo"></TopBarBlock>' +
       '</div>' +
       '</div>'
     })
