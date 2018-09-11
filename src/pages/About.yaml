@@ -1,0 +1,24 @@
+---
+about:
+
+  route:
+    path: /about
+    name: About
+
+  template:
+    - type: topbar
+      brand: VYWC
+      logo: logo.png
+      menu:
+        Homepage:
+          url: /
+        About:
+          url: /about
+        Github:
+          url: https://github.com/
+    - type: text
+      id: content
+      content: This is a little about page2.
+      align: center
+
+...

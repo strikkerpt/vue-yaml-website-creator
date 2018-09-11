@@ -1,0 +1,87 @@
+---
+homepage:
+
+  route:
+    path: /
+    name: Homepage
+
+  template:
+
+      - type: topbar
+        brand: VYWC
+        logo: logo.png
+        menu:
+          Homepage:
+            url: /
+          About:
+            url: /about
+          Github:
+            url: https://github.com/
+
+      - type: highlight
+        weight: 1
+        id: highlight
+        content: Welcome to VYWC testing homepage. Crafted with YAML!
+        align: center
+
+      - type: text
+        id: box
+        content: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus quis est sed ipsum sagittis consequat tempor quis neque.
+          Nunc semper purus mi, tempor ornare sapien ultrices nec.
+          In quis sapien interdum, maximus orci eget, scelerisque justo.
+          Aenean nec elementum ex. Sed eget sem ultrices, aliquam arcu sed, sollicitudin sem.
+          Suspendisse potenti. <br>
+          Donec sit amet congue neque, id congue odio. Aenean a consectetur dolor.
+          Sed ac risus at ex pulvinar cursus. Nullam a elementum leo, quis semper ex.
+          Vestibulum in ullamcorper risus. Phasellus eget dictum massa.
+          Donec a dui eleifend, tempus nisi a, rhoncus ex.<br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Praesent erat orci, convallis nec laoreet eu, aliquam sed tellus.
+          Suspendisse potenti. Praesent lacinia sollicitudin tincidunt.
+          Maecenas nec est facilisis, iaculis turpis consectetur, malesuada dolor.
+          Donec at ex eget arcu eleifend commodo. Vestibulum et suscipit orci.
+        align: left
+
+      - type: highlight
+        weight: 3
+        id: highlight
+        content: This is a little highlight
+        align: right
+
+      - type: text
+        id: box
+        content: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus quis est sed ipsum sagittis consequat tempor quis neque.
+          Nunc semper purus mi, tempor ornare sapien ultrices nec.
+          In quis sapien interdum, maximus orci eget, scelerisque justo.
+          Aenean nec elementum ex. Sed eget sem ultrices, aliquam arcu sed, sollicitudin sem.
+          Suspendisse potenti
+        align: right
+
+      - type: image
+        title: This is a image
+        src: https://r.hswstatic.com/w_907/gif/tesla-cat.jpg
+
+      - type: text
+        id: box
+        content: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus quis est sed ipsum sagittis consequat tempor quis neque.
+        align: left
+
+      - type: list
+        content:
+          - First item of the list
+          - Second item of the list
+          - Third item of the list
+
+      - type: image
+        title: This is a image
+        align: center
+        filter: blur
+        src: logo.png
+
+...
