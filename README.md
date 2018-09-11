@@ -3,7 +3,7 @@ Create a simple static website using yaml, vue and bootstrap will take care of t
 
 More information soon...
 
-## Components
+## Template blocks
 
 ### text
 
