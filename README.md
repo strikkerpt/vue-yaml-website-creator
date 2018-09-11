@@ -5,7 +5,7 @@ More information soon...
 
 ## Components
 
-#### text
+### text
 
 Example:
 
@@ -26,7 +26,7 @@ Options:
 |content|none|The text that is used on the component
 |align|left|The alignment of the text
 
-#### highlight
+### highlight
 
 Example:
 
