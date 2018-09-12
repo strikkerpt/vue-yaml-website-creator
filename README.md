@@ -1,5 +1,6 @@
 vue-yaml-website-creator
 ========================
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/017669a15b28467dadd8d03cc3500e6c)](https://www.codacy.com/app/strikkerpt/vue-yaml-website-creator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=strikkerpt/vue-yaml-website-creator&amp;utm_campaign=Badge_Grade)
 
 Create a simple static website using yaml, vue and bootstrap will take care of the rest.
 
